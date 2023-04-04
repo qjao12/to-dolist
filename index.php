@@ -11,26 +11,20 @@
 </head>
 
 <body>
-    <?php
-    include 'header.php';
-    ?>
-
-    <section class="bg-dark p-5 mt-5">
-        <form class="row g-3">
-            <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Task</span>
-                <input type="text" name="task" class="form-control" placeholder="Enter Task" aria-label="Username" aria-describedby="basic-addon1">
-                <button class="btn btn-primary" type="button">Submit</button>
+    <?php include 'header.php' ?>
+    <section class="bg-dark p-5 text-dark">
+        <form action="index.php" method="POST">
+            <div class="input-group mb-3 mt-5">
+                <span class="input-group-text" id="basic-addon1">Task:</span>
+                <input type="text" name='sample' class="form-control" placeholder="Enter Task">
+                <button type="submit" class="btn btn-primary">Button</button>
             </div>
         </form>
-        <?php
-        $task = $_POST['task'];
-        echo $task;
-        ?>
-        </div>
-        </div>
     </section>
-
+    <?php
+    $task = $_POST['sample'];
+    echo $task;
+    ?>
 </body>
 
 </html>
