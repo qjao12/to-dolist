@@ -7,6 +7,8 @@
     <title>To Do List</title>
 </head>
 <body>
-    
+    <?php 
+    include 'function.php';
+    ?>
 </body>
 </html>
